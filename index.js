@@ -9,8 +9,8 @@ mongoose.connect("mongodb+srv://ssingh756:rkdfbca053@cluster0.vpnq5.mongodb.net/
 
     var app = express();
     app.use(bodyParser.urlencoded({extended:false}));
-    app.use(express.json())
-    app.use('/api', router)
+    app.use(express.json());
+    app.use('/api', router);
 
     app.listen(process.env.PORT, ()=>{
         console.log("server started");

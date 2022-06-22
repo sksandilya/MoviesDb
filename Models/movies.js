@@ -4,4 +4,4 @@ var movieSearch = mongoose.Schema(()=>{
     rating:String
 })
 
-module.exports = mongoose.model("stud", movieSearch);
+module.exports = mongoose.model("movies", movieSearch);
